@@ -10,12 +10,10 @@ function cornerUpdate(corner) {
     }
 }
 
-document.addEventListener('keydown', logKey);
-
-function logKey(e) {
+document.addEventListener('keydown', function(e) {
     if (e.key == 'F1') {
         for (let i = 0; i < corners.length; i++) {
             if (corners[i].onclick != undefined) corners[i].style.background = 'rgba(255, 0, 0, 0.25)';
         }
     }
-}
+});
