@@ -5,10 +5,13 @@ html {
 }
 
 body {
-	background: linear-gradient(white, black);
 	margin: 0;
 	position: relative;
 	height: 100%;
+}
+
+#front {
+	background: linear-gradient(white, black);
 }
 
 input {
@@ -82,4 +85,64 @@ input {
 	height: 100%;
 	width: 25%;
 	position: absolute;
+}
+
+#pageBody {
+	height: 580px;
+	width: 750px;
+	background: #5d5d5dc0;
+	top: 50%;
+	translate: -50% -50%;
+	position: absolute;
+	left: 50%;
+	border-radius: 1vh;
+}
+
+#backButton {
+	background: #00000060;
+	width: 40px;
+	color: white;
+	text-align: center;
+	position: absolute;
+	border-bottom-right-radius: 1vh;
+	height: 20px;
+	transition: 0.5s;
+	user-select: none;
+}
+
+#backButton:hover {
+	background: #000000A0;
+}
+
+#pageBody #backButton {
+	border-radius: 1vh;
+}
+
+#pageTitle {
+	height: 30px;
+	margin-top: 25px;
+	width: 96%;
+	left: 50%;
+	translate: -50%;
+	position: absolute;
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#paragraphs {
+	margin-top: 65px;
+	height: 501px;
+	background: #0000007d;
+	width: 40%;
+	left: 5%;
+	position: absolute;
+	border-radius: 1vh;
+	border: #0000009c solid 0.5vh;
+}
+
+#paragraphs * {
+	color: white;
+	margin: 0;
+	padding: 0 5px;
 }
